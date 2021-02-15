@@ -1,0 +1,26 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gamja Flower', cursive;
+}
+header {
+    background-color: #e4572e;
+    text-align: center;
+    padding-top: 2px;
+}
+
+header h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 40px;
+    text-shadow: 3px 2px 1px #fff;
+    margin-bottom: 2px;
+}
+
+header h2 {
+    color: #fff;    
+}
+
+main {
+    max-width: 750px;
+    margin: 0 auto;
+}
