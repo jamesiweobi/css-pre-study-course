@@ -107,3 +107,19 @@ form p input {
     text-align: justify;
     font-family: 'Gamja Flower', cursive;
 }
+
+#btn_div {
+    margin: 20px;
+    width: auto;
+}
+
+#btn {
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    box-shadow: 2px 2px 0px 2px #e4572e;
+    color: white;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+    border-radius: 5px;
+}
