@@ -40,7 +40,7 @@ createBtn.onclick = function() {
     const articleDestination = document.querySelector('main');
     const article = document.querySelector('main article')
     articleDestination.insertBefore(newArticle, article)
-    let h2Text = prompt('Please enter date DD/MM/YY: Title: ')
+    let h2Text = prompt('Please Enter Date in This Order DD/MM/YY: Title: ')
     newH2.append(h2Text)
     let parText = prompt('Enter your note: ')
     newPar.append(parText)
