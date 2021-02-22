@@ -123,3 +123,9 @@ form p input {
     font-size: 20px;
     border-radius: 5px;
 }
+
+#img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
