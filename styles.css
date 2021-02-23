@@ -129,3 +129,7 @@ form p input {
     height: 100px;
     overflow: hidden;
 }
+span {
+    text-align: center;
+    font-size: 16px;
+}

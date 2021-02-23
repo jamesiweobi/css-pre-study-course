@@ -11,8 +11,24 @@ createBtn.setAttribute('id', 'btn');
 const element = document.querySelector('#btn_div');
 element.append(createBtn);
 
+arrCount = [1, 1]
+let countPar = document.createElement('p');
+let countPartext = `Number of  note is ${arrCount.length}.`;
+countPar.append(countPartext)
+let span = document.querySelector('span')
+span.append(countPar)
+console.log(arrCount.length)
+
+function newCount(countVar) {
+    countPartext = `Number of  note is ${countVar}.`;
+    return countPartext
+}
+
+
+
+
 // Adding a click listener to the button and a function on what to do.
-createBtn.onclick = function() {
+createBtn.onclick = function () {
     // Create a New article tag
     const newArticle = document.createElement('article');
     // Create the content of the new article h2, div_container and the <p> in the div_container
@@ -45,4 +61,17 @@ createBtn.onclick = function() {
     let parText = prompt('Enter your note: ')
     newPar.append(parText)
     newArticleDiv.append(img)
+    let countVar =  `Number of  note is ${arrCount.length}.`;
+    newCount(countVar)
 }
+
+
+
+
+// let two =  document.querySelectorAll('article').length;
+
+// function noteCount() {
+
+//     return arrCount.length
+// }
+// console.log(arrCount)
