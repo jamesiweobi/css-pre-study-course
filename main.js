@@ -1,36 +1,19 @@
-// Create Button 
-const createBtn = document.createElement('button');
-// Add label on the button
-const btnNote = document.createTextNode('Create New Note');
+let countVar;
+let createBtn = document.getElementById("btn")
+let firstCount = "Number of note is 2."
 
-// Add Note to the Button and add ID attribute
-createBtn.appendChild(btnNote);
-createBtn.setAttribute('id', 'btn');
-
-// Add the Element to the page, by selcting destination and append
-const element = document.querySelector('#btn_div');
-element.append(createBtn);
-
-arrCount = [1, 1]
-let countPar = document.createElement('p');
-let countPartext = `Number of  note is ${arrCount.length}.`;
-countPar.append(countPartext)
-let span = document.querySelector('span')
-span.append(countPar)
-console.log(arrCount.length)
-
-function newCount(countVar) {
-    countPartext = `Number of  note is ${countVar}.`;
+function updateNote() {
+    let countPartext = `Number of  note is ${document.querySelectorAll('article').length}.`;
     return countPartext
 }
 
-
-
-
 // Adding a click listener to the button and a function on what to do.
-createBtn.onclick = function () {
+createBtn.addEventListener("click", function () {
     // Create a New article tag
     const newArticle = document.createElement('article');
+
+
+
     // Create the content of the new article h2, div_container and the <p> in the div_container
     const newH2 = document.createElement('h2');
     const newArticleDiv = document.createElement('div');
@@ -54,24 +37,13 @@ createBtn.onclick = function () {
 
     // Targetting and setting the new article destination
     const articleDestination = document.querySelector('main');
-    const article = document.querySelector('main article')
-    articleDestination.insertBefore(newArticle, article)
-    let h2Text = prompt('Please Enter Date in This Order DD/MM/YY: Title: ')
-    newH2.append(h2Text)
-    let parText = prompt('Enter your note: ')
-    newPar.append(parText)
-    newArticleDiv.append(img)
-    let countVar =  `Number of  note is ${arrCount.length}.`;
-    newCount(countVar)
-}
-
-
-
-
-// let two =  document.querySelectorAll('article').length;
-
-// function noteCount() {
-
-//     return arrCount.length
-// }
-// console.log(arrCount)
+    const article = document.querySelector('main article');
+    articleDestination.insertBefore(newArticle, article);
+    let h2Text = prompt('Please Enter Date in This Order DD/MM/YY: Title: ');
+    newH2.append(h2Text);
+    let parText = prompt('Enter your note: ');
+    newPar.append(parText);
+    newArticleDiv.append(img);
+   
+    document.querySelector('span').append(updateNote());
+});
