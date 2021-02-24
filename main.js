@@ -3,7 +3,7 @@ let createBtn = document.getElementById("btn")
 let firstCount = "Number of note is 2."
 
 function updateNote() {
-    let countPartext = `Number of  note is ${document.querySelectorAll('article').length}.`;
+      let countPartext = `Number of  note is ${document.querySelectorAll('article').length}.`;
     return countPartext
 }
 
