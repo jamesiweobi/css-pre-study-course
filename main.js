@@ -1,9 +1,9 @@
-let countVar;
+
 let createBtn = document.getElementById("btn")
-let firstCount = "Number of note is 2."
+
 
 function updateNote() {
-      let countPartext = `Number of  note is ${document.querySelectorAll('article').length}.`;
+      let countPartext = `Note count is ${document.querySelectorAll('article').length}.`;
     return countPartext
 }
 
@@ -11,8 +11,6 @@ function updateNote() {
 createBtn.addEventListener("click", function () {
     // Create a New article tag
     const newArticle = document.createElement('article');
-
-
 
     // Create the content of the new article h2, div_container and the <p> in the div_container
     const newH2 = document.createElement('h2');
