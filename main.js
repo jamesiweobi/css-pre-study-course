@@ -1,6 +1,4 @@
-
 let createBtn = document.getElementById("btn")
-
 
 function updateNote() {
       let countPartext = `Note count is ${document.querySelectorAll('article').length}.`;
