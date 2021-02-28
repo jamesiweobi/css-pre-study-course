@@ -35,6 +35,8 @@ createBtn.addEventListener("click", function () {
     const articleDestination = document.querySelector('main');
     const article = document.querySelector('main article');
     articleDestination.insertBefore(newArticle, article);
+
+    // Capture the input value for and adding the input to the right elements
     let h2Text = prompt('Please Enter Date in This Order DD/MM/YY: Title: ');
     newH2.append(h2Text);
     let parText = prompt('Enter your note: ');
